@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 To.putExtra(Intent.EXTRA_TEXT, message);
 
                 To.setType("Email/XAH");
+                startActivity(Intent.createChooser(To,"Your Email"));
+
+
 
             }
         });
